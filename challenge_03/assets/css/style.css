@@ -1,0 +1,380 @@
+@charset "utf-8";
+
+body {
+    font-family:  Helvetica;
+	background-color: #ffffff;
+    height: 100vh;
+    font-family: Helvatica;
+}
+h1, p, span{
+    font-family: Helvetica;
+    font-style: normal;
+}
+
+/*bagian Main navbar*/
+.page-wrap:before{
+    transition: .3s all ease-in-out;
+    background: rgba(0, 0, 0, 0.6);
+    content: "";
+    position: absolute;
+    z-index: 2000;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    opacity: 0;
+    visibility: hidden;
+}
+
+.off-view .page-wrap{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: 2;
+    overflow: hidden;
+}
+
+.off-view .page-wrap:before{
+    opacity: 0.5;
+    visibility: visible;
+}
+
+.mobile-view{
+    width:300px;
+    position: fixed;
+    right: 0;
+    z-index: 2000;
+    padding-top: 20px;
+    background: white;
+    height: calc(100vh);
+    transform: translateX(110%);
+    box-shadow: -10px 0 20px -10px rgba(0,0,0,0.1);
+    transition: .3s all ease-in-out;
+    font-family: 'Helvetica';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+    color: #000000;
+
+}
+
+.off-view .mobile-view{
+    transform: translateX(0%);
+}
+.mobile-view .mobile-view-header{
+    width: 100%;
+    float: left;
+    text-align: right;
+    padding-left: 20px;
+    padding-right: 30px;
+}
+.mobile-view .mobile-view-header span{
+    float: left;
+    text-align: left;
+    font-family: 'Helvetica';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 20px;
+    color: #000000;
+    padding-left: 2em;
+}
+
+.mobile-view .mobile-view-header .mobile-view-close{
+    float: right;
+    margin-top: 8px;
+    margin-right: 10px;
+}
+
+
+.mobile-view .mobile-view-header .mobile-view-close i{
+    font-size: 30px;
+    display: inline-block;
+    padding-right: 10px;
+    line-height: 1;
+    cursor: pointer;
+    transition: .3s all ease;
+}
+i .fa .fa-times .js-toggle::after, ::before{
+    font-size: 30px;
+    float: right;
+}
+
+.mobile-view .mobile-view-body{
+    width: 100%;
+    overflow: scroll;
+    position: relative;
+    padding: 10px;
+    height: calc(100vh - 52px);
+    padding-bottom: 150px;
+}
+
+.mobile-view .mobile-view-body .clone-view{
+    padding: 0;
+    padding-left: 1em;
+    margin-left:0px;
+    list-style: none;
+    position: absolute;
+}
+
+.mobile-view .mobile-view-body .clone-view a{
+    display: block;
+    position: relative;
+    color: black;
+    text-align: left;
+    font-size: 16px;
+    font-family: 'Helvetica';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 20px;
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+    margin: 16px 0px;
+}
+.main .nav-style{
+    max-width: 1440px; 
+    margin: auto; 
+    background-color: #F1F3FF;
+}
+.main .nav-style .navbar{
+    background-color: #F1F3FF;
+}
+.main .nav-style .navbar .container-fluid{
+    padding: 10px 30px 20px 30px;
+}
+.main .nav-style .navbar a{
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 20px;
+    color: #000000;
+    padding: 9px;
+}
+.main .nav-style .head-content{
+    width: 100%;
+}
+.main .nav-style .head-content h1{
+    font-weight: bold;
+    font-size: 36px;
+    line-height: 150%;
+}
+.main .nav-style .head-content p{
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 20px;
+    color: #000000;
+}
+
+/*Ourservices*/
+.Ourservices{
+    padding-top: 7rem;
+    padding-bottom: 5rem;
+    
+}
+.Ourservices .container .row .col-md-5 img{
+    width: 459px;
+    height: 428px;
+    left: 206px;
+    top: 604px;
+}
+.Ourservices .container .row .col-md-5 h1{
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 36px;
+    color: #000000;
+}
+.Ourservices .container .row .col-md-5 p{
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 20px;
+    color: #000000;
+}
+
+/*Why Us*/
+.whyus{
+    padding-top: 10rem;
+    padding-bottom: 10rem;
+}
+.whyus .container h1{
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 36px;
+    color: #000000;
+}
+.whyus .container span{
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 20px;
+    color: #000000;
+}
+.whyus .container p{
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 20px;
+    color: #000000;
+}
+.whyus .card img{
+    width: 20px; 
+    height: 20px; 
+    margin-top: 20px; 
+    margin-left: 25px;
+}
+
+
+/*Testimonial dan slider*/
+
+.testimonial{
+    padding-top: 10rem;
+    padding-bottom: 9rem;
+}
+.testimonial h1{
+    font-family: Helvetica;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 36px;
+    color: #000000;
+}
+.testimonial .section-header{
+    position: relative;
+    padding-bottom: 10px;
+    text-align: center;
+    font-weight: bold;
+}
+
+.testimonial-item .content{
+    background: #F1F3FF;
+    color: #333;
+    margin: 20px 15px;
+    padding-left: 5%;
+    padding-right: 5%;
+    padding-top: 3%;
+    border-radius: 10px;
+    
+}
+.testimonial-item .content .row{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex ;
+    place-items: normal;
+}
+.testimonial-item .user{
+    margin-bottom: 30px;
+    text-align: center;
+}
+.testimonial-item  .image{
+    position: relative;
+    margin: 15px 15px 30px 15px;
+}
+.testimonial-item .image img{
+    height: 50px;
+    width: 50px;
+    border-radius: 170px;
+}
+.testimonial-item .content i{
+    color: #F9CC00;
+}
+.testimonial-item p,strong{
+    text-align: justify;
+    font-family: Helvetica;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 20px;
+    color: #000000;
+}
+.testimonial-item .content strong{
+    font-weight: bold;
+}
+#slider{
+    margin-top: 5%;
+}
+.img-area{
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    display: inline-block;
+    overflow: hidden;
+}
+.img-area img{
+    width: 100%;
+}
+
+.owl-nav{
+    text-align: center;
+    margin-top: 1%;
+}
+.owl-prev{
+    display: inline-block;
+    height: 30px !important;
+    width: 30px !important;
+    background-color: rgb(224, 247, 224) !important;
+    opacity: .8;
+    margin: 0 10px;
+    border-radius: 50%;
+}
+
+.owl-next{
+    display: inline-block;
+    height: 30px !important;
+    width: 30px !important;
+    background-color: rgb(129, 243, 129) !important;
+    opacity: .8;
+    margin: 0 10px;
+    border-radius: 50%;
+}
+
+/* sewamobl*/
+.sewamobil{
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+}
+.sewamobil .jumbotron{
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+    background-color: #0D28A6;
+    color: #ffffff;   
+}
+.sewamobil h1{
+    font-weight: bold;
+    font-size: 36px;
+    line-height: 150%;
+    color: #FFFFFF;
+}
+.sewamobil p{
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 20px;
+    color: #FFFFFF;
+}
+
+/*FAQ*/
+.FAQ{
+    padding-top: 5rem;
+    padding-bottom: 6rem;
+}
+.FAQ h1{
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 36px;
+    color: #000000;
+}
+.FAQ p{
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 20px;
+    color: #000000;
+}
+
+/*Footer*/
+.footer_top{
+    padding-top: 4rem;
+}
+.footer_top p{
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 20px;
+    color: #000000;
+}
